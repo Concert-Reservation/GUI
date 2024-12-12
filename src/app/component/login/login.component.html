@@ -1,0 +1,20 @@
+<p>login works!</p>
+<div class="contentSfondo">
+    <div class="container">
+        <div class="form-container sign-in">
+            <form [formGroup]="loginForm">
+                <h1>Accedi Admin</h1>
+                <span>Usa la tua Email e password</span>
+                <input type="email" placeholder="Email" formControlName="email">
+                <input type="password" placeholder="Password" formControlName="password">
+                <a href="Recupero" style="color: black"><span>Password dimenticata? Recuperala da qui</span></a>
+                <button type="submit" [ngStyle]="{'background': loginForm.valid ? '#512da8':'grey'}">Accedi</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+    
+    
+    
+    
